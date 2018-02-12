@@ -1,0 +1,26 @@
+@mixin text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1vw;
+}
+
+.container {
+  width: 60vw;
+  margin-right: auto; margin-left: auto;
+
+
+ul{
+    text-align: left;
+    li{
+font-size: 4vw;
+@include text;
+    }
+}
+
+
+
+}
+
+h1 {
+  @include text;
+}
