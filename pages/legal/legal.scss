@@ -1,26 +1,90 @@
 @mixin text {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.1vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1vw;
 }
 
 .container {
-  width: 60vw;
-  margin-right: auto; margin-left: auto;
-
-
-ul{
-    text-align: left;
-    li{
-font-size: 4vw;
-@include text;
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    ul {
+        list-style: none;
+        text-align: center;
+        li {
+            padding: 1rem;
+            font-size: 2vw;
+            @include text;
+        }
+        li:hover{
+          font-size: 4vw;
+        }
     }
 }
 
-
-
+h1 {
+    @include text;
 }
 
-h1 {
-  @include text;
+@media screen and (max-width:500px) {
+    .container {
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
+        ul {
+           list-style: disc;
+            text-align: left;
+            li {
+                padding: 1rem;
+                font-size: 5vw;
+                @include text;
+            }
+            li:hover{
+              font-size: 6vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .container {
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
+        ul {
+          list-style: disc;
+            text-align: left;
+            li {
+                padding: 1rem;
+                font-size: 5vw;
+                @include text;
+            }
+            li:hover{
+              font-size: 6vw;
+            }
+        }
+    }
+}
+
+::selection{
+background-color: rgba(128, 128, 128, 0.267);
+}
+::-moz-selection{
+  background-color: rgba(128, 128, 128, 0.267);
+}
+
+.lander{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 0;
+padding: 0.2vw;;
+background-color: rgb(206, 203, 203);
+text-decoration: none;
+color: rgb(31, 30, 30);
+}
+.lander:hover{
+  background-color: rgb(255, 255, 255);
+  padding: 0.1vw;
 }
