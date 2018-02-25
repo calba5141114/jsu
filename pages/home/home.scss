@@ -1,84 +1,91 @@
 @mixin navs {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
 }
 
 @mixin ctext {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-@mixin subtitle{
-    text-align: center;
-    color: grey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@mixin subtitle {
+  text-align: center;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
-    width: 65vw;
+  width: 65vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+body {
+  nav {
+    display: flex;
+    a {
+      @include navs;
+      font-size: 1.5vw; // background-color: rgba(117, 117, 117, 0.253);
+    }
+    a:hover {
+      // color: grey;
+      text-decoration: line-through;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 75vw;
     margin-right: auto;
     margin-left: auto;
-}
-.subtitle{
-    @include subtitle;
-}
-body {
+  }
+  body {
     nav {
-        display: flex;
-        a {
-            @include navs;
-            font-size: 1.5vw;
-        }
-        a:hover {
-            color: grey;
-            background-color: rgb(250, 250, 250);
-            text-decoration: line-through;
-        }
+      display: flex;
+      a {
+        position: absolute;
+        @include navs;
+        font-size: 4vw;
+      }
     }
+  }
 }
 
-@media screen and (max-width:500px) {
-
-    .container {
-        width: 75vw;
-        margin-right: auto;
-        margin-left: auto;
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 75vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body {
+    h1 {
+      font-size: 10vw;
     }
-    body {
-        nav {
-            display: flex;
-            a {
-                @include navs;
-                font-size: 4vw;
-            }
-        }
+    nav {
+      display: flex;
+      a {
+        @include navs;
+        font-size: 3vw;
+      }
     }
-}
-
-@media screen and (max-width:1025px) {
-    .container {
-        width: 75vw;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    body {
-        h1 {
-            font-size: 10vw;
-        }
-        nav {
-            display: flex;
-            a {
-                @include navs;
-                font-size: 3vw;
-            }
-        }
-    }
+  }
 }
 
 h1 {
-    @include ctext;
-    font-size: 4vw;
+  @include ctext;
+  font-size: 5vw;
 }
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1vw;
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1vw;
 }

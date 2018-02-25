@@ -7,7 +7,7 @@
 .subtitle {
   text-align: center;
   color: grey;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body nav {
@@ -22,9 +22,11 @@ body nav a {
 }
 
 body nav a:hover {
-  color: grey;
-  background-color: #fafafa;
   text-decoration: line-through;
+}
+
+body h3 {
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -37,6 +39,7 @@ body nav a:hover {
     display: flex;
   }
   body nav a {
+    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-decoration: none;
@@ -67,7 +70,7 @@ body nav a:hover {
 h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 p {
