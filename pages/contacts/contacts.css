@@ -12,3 +12,8 @@ body nav a {
 body nav a:hover {
   text-decoration: line-through;
 }
+
+.Tub{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
