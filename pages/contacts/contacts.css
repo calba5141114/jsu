@@ -17,3 +17,9 @@ body nav a:hover {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } */
+
+.Love{
+  text-emphasis:none;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
