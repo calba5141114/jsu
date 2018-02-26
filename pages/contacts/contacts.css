@@ -9,9 +9,9 @@ body nav a {
   font-size: 1.5vw;
 }
 
-<-- body nav a:hover {
-  text-decoration: line-through;
-} -->
+body nav a:hover {
+  /* text-decoration: line-through; */
+}
 
 .Tub{
   text-align: center;

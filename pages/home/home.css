@@ -22,7 +22,7 @@ body nav a {
 }
 
 body nav a:hover {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 body h3 {
