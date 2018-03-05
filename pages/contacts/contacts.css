@@ -35,5 +35,15 @@ body nav a:hover {
 
   width: 100%;
   height: auto;
-  
+
 }
+
+/* <style> */
+/* .dd { basic responsive img */
+	/* max-width: 100%; */
+	/* height: auto; */
+	/* width: auto\9; IE8 */
+/* } */
+/* </style> */
+
+/* <img class="dd" src="../../media/officers/YardenJsu.jpg" alt="Yarden"/> */
