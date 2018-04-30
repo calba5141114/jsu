@@ -1,91 +1,54 @@
-@mixin navs {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  text-decoration: none;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+  font-family:'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
 }
-
-@mixin ctext {
+h1{
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+
 }
 
-@mixin subtitle {
+.subtitle{
   text-align: center;
-  color: grey;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: rgb(201, 201, 201);
 }
-
-.container {
-  width: 65vw;
-  margin-right: auto;
+.container{
+  display: block;
   margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  flex: 1;
+  padding: 5vw;
 }
 
-.subtitle {
-  @include subtitle;
+.navMain{
+  border: solid;
+  border-color: gainsboro;
+  border-width: 0.1vw;
+  // box-shadow: 10px 10px 5px gainsboro;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 40vw;
+flex: 0.09;
+// background: cadetblue;
+
+.navLinks{
+display: flex;
+flex-direction: column;
+font-size: 3vw;
+a{
+  color: rgb(85, 76, 76);
+  margin: 2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+a:hover{
+  color: gainsboro;
+}
 }
 
-body {
-  nav {
-    display: flex;
-    a {
-      @include navs;
-      font-size: 1.5vw; // background-color: rgba(117, 117, 117, 0.253);
-    }
-    a:hover {
-      // color: grey;
-      text-decoration: line-through;
-    }
-  }
-  h3 {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 75vw;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  body {
-    nav {
-      display: flex;
-      a {
-        position: absolute;
-        @include navs;
-        font-size: 4vw;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .container {
-    width: 75vw;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  body {
-    h1 {
-      font-size: 10vw;
-    }
-    nav {
-      display: flex;
-      a {
-        @include navs;
-        font-size: 3vw;
-      }
-    }
-  }
-}
-
-h1 {
-  @include ctext;
-  font-size: 5vw;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.1vw;
 }
