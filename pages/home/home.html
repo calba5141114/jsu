@@ -14,15 +14,28 @@
 
 <body>
 
-<div class="navMain">
-<div class="navLinks">
-<a href="../home/home.html"> <i class="fas fa-home"></i>   </a>
-<a href="../about/about.html"> <i class="fas fa-info-circle"></i>   </a>
-<a href="../contacts/contacts.html"> <i class="fas fa-envelope-open"></i>  </a>
-<a href="../legal/privacy-policy.html"> <i class="fas fa-file-alt"></i>  </a>
-<a href="../location/location.html"><i class="fas fa-location-arrow"></i></a>
-</div>
-</div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()">  <i class="fas fa-bars"></i>        </span>
+
+
+
 
 
 
@@ -35,6 +48,20 @@
             Homestead High School
         </h3>
 <br>
+        <p class="foo">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum and more recently with desktop publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum
+        </p>
+       <img  class="img-responsive foo" src="https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aae35c214e42fbb7d95a2a9b96aac9f8&auto=format&fit=crop&w=752&q=80">
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -48,6 +75,34 @@
             of Lorem Ipsum and more recently with desktop publishing software like Aldus PageMaker including versions of
             Lorem Ipsum
         </p>
+        <p class="foo">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum and more recently with desktop publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum
+        </p>
+        <p class="bar">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum and more recently with desktop publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum
+        </p>
+
+
 
     </div>
 
@@ -55,8 +110,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="./home.js"></script>
     <script src="../../plugin/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="./home.js"></script>
 </body>
 
 </html>
