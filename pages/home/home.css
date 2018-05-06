@@ -69,6 +69,7 @@ html {
 
 /* Position the content inside the overlay */
 .overlay-content {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   top: 25%;
   /* 25% from the top */
@@ -85,7 +86,7 @@ html {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #ccc7c7;
   display: block;
   /* Display block instead of inline */
   transition: 0.3s;
@@ -93,8 +94,9 @@ html {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+  color: #797373;
 }
 
 /* Position the close button (top right corner) */
@@ -115,4 +117,30 @@ html {
     top: 15px;
     right: 35px;
   }
+}
+
+.page-footer {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.178);
+  border-width: 0.02vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-footer a {
+  padding-right: 1vw;
+  padding-left: 1vw;
+  font-size: 40px;
+  color: #181515;
+}
+
+.page-footer a:hover {
+  color: #2e2828;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
 }
