@@ -12,7 +12,7 @@ sr.reveal('.bar');
 
 
 
-    const backHome = document.getElementById('backHome');
+const backHome = document.getElementById('backHome');
 
 var request = new XMLHttpRequest();
 request.open("GET", url);
@@ -51,7 +51,6 @@ Published: ${list[index].publishedAt}</h5>
     newsContainer.innerHTML = printData;
 }
 
-backHome.onclick = () =>{
+backHome.onclick = () => {
     window.location = "../home/home.html";
 };
-
