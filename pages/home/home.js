@@ -13,16 +13,13 @@ window.onload = () => {
         position: 'topRight',
         theme: 'dark'
     });
-}
-
-
-
+};
 
 
 
 /* Open when someone clicks on the span element */
 function openNav() {
-    document.getElementById("myNav").style.width = "40%";
+    document.getElementById("myNav").style.width = "50%";
 
 
 }
