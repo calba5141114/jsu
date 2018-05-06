@@ -146,3 +146,7 @@ html {
   flex-direction: row;
   font-size: 30px;
 }
+
+a {
+  color: #7272ca;
+}

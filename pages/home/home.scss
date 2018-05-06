@@ -17,8 +17,7 @@ h1 {
 .container {
     // display: block;
     margin-left: auto;
-    margin-right: auto;
-    // width: 70%;
+    margin-right: auto; // width: 70%;
     padding: 5vw;
 }
 
@@ -29,8 +28,8 @@ img {
     border-radius: 2%;
 }
 
-.img-fluid{
-  max-width: 100%;
+.img-fluid {
+    max-width: 100%;
 }
 
 html {
@@ -51,10 +50,7 @@ html {
     background: #FF0000;
 }
 
-
-
 // the page menu
-
 /* The Overlay (background) */
 
 .overlay {
@@ -135,30 +131,30 @@ html {
 }
 
 // Page footer
-
 .page-footer {
-  
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.178);
-  border-width: 0.02vw;
-  padding: 1vw;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.178);
+    border-width: 0.02vw;
+    padding: 1vw;
     display: flex;
     flex-direction: row;
     a {
-      padding-right: 1vw;
-      padding-left: 1vw;
-      font-size: 40px;
-      color: rgb(24, 21, 21);
+        padding-right: 1vw;
+        padding-left: 1vw;
+        font-size: 40px;
+        color: rgb(24, 21, 21);
     }
-    a:hover{
-      color: rgb(46, 40, 40);
+    a:hover {
+        color: rgb(46, 40, 40);
     }
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
 
-
-.top{
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
+a {
+    color: rgb(114, 114, 202);
 }
