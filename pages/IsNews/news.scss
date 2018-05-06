@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    font-family: 'Roboto', sans-serif;
+  
+    font-family: 'Roboto', sans-serif; 
+
     display: flex;
     flex-direction: row;
 }
@@ -12,6 +14,21 @@ body {
 }
 
 .newsCard {
+   h1{
+    font-weight: lighter;
+   }
+   h2{
+    font-weight: lighter;
+   }
+   h3{
+    font-weight: lighter;
+   }
+   h4{
+    font-weight: lighter;
+   }
+   h5{
+    font-weight: lighter;
+   }
     width: 100%;
     margin-top: 2vw;
     text-align: left;

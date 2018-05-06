@@ -33,7 +33,7 @@ function FmtAndPrnt(jsonFile) {
 
     for (let index in list) {
         var newsCard = `
-<div class="newsCard foo" >
+<div class="newsCard foo">
 <h5> Source: ${list[index].source.name},
 ${list[index].author}</h5>
 <h3>  <a href="${list[index].url}" target="_blank">${list[index].title}</a> </h3>
