@@ -7,67 +7,65 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./contacts.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../../plugin/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../../bower_components/izitoast/dist/css/iziToast.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="../../media/star-of-david.svg" width="30" height="30">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../home/home.html">Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../about/about.html">About
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
+        <div class="top foo">
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span id="backHome">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <br>
+            </div>
+        
+        
 
 
-    <div class="container text-center">
-        <h1 class="display-3">Contacts</h1>
-        <br>
-        <p class="lead">
-            You may contact JSU officers and club members using the following information.
-        </p>
-        <br>
-       
-            
-                <h2 class="display-3"> If you wish to contact the Jewish Student Union President Yarden Zinger you may do so @ yardenzinger@gmail.com</h2>
-            
-            <br>
-        <p class="img-responsive"><img class="w-50 rounded" src="../../media/officers/YardenJsu.jpg" alt="Yarden Picture" align="text-center" class="image-fluid" /></p>
-            <br>
-            
-                <h2> If you wish to contact the Jewish Student Union Treasurer ----- treasurerJSU@gmail.com </h2>
-          
-            <br>
-            <p class="img-responsive"><img class="w-50 rounded" src="../../media/officers/AMit.jpg" alt="Yarden Picture" align="text-center" class="image-fluid" /></p>
-            <br>
-          
-                If you wish to contact the event organizer you may do so at JSUHHSEVENTS@gmail.com
-           
-    </div>
+    <div class="card foo">
+        <img src="../../media/officers/YardenJsu.jpg" alt="Yarden" style="width:100%">
+        <h1>Yarden Zinger</h1>
+        <p class="title">President, JSU</p>
+        <p>Homestead High School</p>
+        <a href="#"><i class="fab fa-dribbble"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a> 
+        <a href="#"><i class="fab fa-linkedin"></i></a> 
+        <a href="#"><i class="fab fa-facebook"></i></a> 
+        <p><a href="mailto:mail@example.org"><button id="Yarden">Contact</button></a></p>
+      </div>
+
+      <br>
+
+      <div class="card foo">
+        <img src="../../media/officers/AMit.jpg" alt="Amit" style="width:100%">
+        <h1>Amit Klein</h1>
+        <p class="title">Some Position, JSU</p>
+        <p>Homestead High School</p>
+        <a href="#"><i class="fab fa-dribbble"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a> 
+        <a href="#"><i class="fab fa-linkedin"></i></a> 
+        <a href="#"><i class="fab fa-facebook"></i></a> 
+        <p><a href="mailto:mail@example.org" ><button id="Amit">Contact</button></a></p>
+      </div>
+
+
+
+
+
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="./contacts.js"></script>
+crossorigin="anonymous"></script>
 <script src="../../plugin/js/bootstrap.min.js"></script>
+<script src="../../bower_components/izitoast/dist/js/iziToast.js"></script>
+<script src="../../bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="../../bower_components/izitoast/dist/js/iziToast.min.js"></script>
+<script src="./contacts.js"></script>
 
 </html>
