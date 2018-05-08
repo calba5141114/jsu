@@ -1,0 +1,23 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+    h1{
+        text-align: center;
+        font-weight: 100;
+    }
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    letter-spacing: 0.05vw;
+    text-justify: auto;
+    width: 40%;
+    flex: 1;
+    padding: 1vw;
+}
