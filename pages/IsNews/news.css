@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #newsContainer {
@@ -71,7 +76,13 @@ html {
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 30px;
 }
+/*# sourceMappingURL=news.css.map */

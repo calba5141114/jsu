@@ -70,6 +70,7 @@ html {
   /* Black w/opacity */
   overflow-x: hidden;
   /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -96,6 +97,7 @@ html {
   color: #ccc7c7;
   display: block;
   /* Display block instead of inline */
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   /* Transition effects on hover (color) */
 }
@@ -131,8 +133,13 @@ html {
   border-color: rgba(0, 0, 0, 0.178);
   border-width: 0.02vw;
   padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .page-footer a {
@@ -147,11 +154,17 @@ html {
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 30px;
 }
 
 a {
   color: #7272ca;
 }
+/*# sourceMappingURL=home.css.map */

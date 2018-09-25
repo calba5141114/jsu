@@ -9,14 +9,22 @@ body h1 {
 }
 
 .body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container {
   letter-spacing: 0.05vw;
   text-justify: auto;
   width: 40%;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 1vw;
 }
+/*# sourceMappingURL=about.css.map */
